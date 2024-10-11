@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css"/>
+    <title>Book Recommendation Generator</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+  <h1>Book Recommendation Generator</h1>
+</header>
+
+<main>
+    <div class="form-container">
+    <form id="book-generator-form">
+<input 
+    type="text" 
+    placeholder="Enter the topic of the book" 
+    autofocus required 
+    autocomplete="off"
+    class="instructions" 
+    id="user-instructions"
+    />
+
+<input type="submit" class="submit-button"/>
+
+    </form>
+    <div class="hint">i.e: flowers, paris, cars</div>
+    </div>
+    <div class="book hidden" id="book">
+
+
+    </div>
+</main>
+
+
+  <footer>This AI project is coded by <a href="https://github.com/Wintermariesolstice" target="_blank">Nora Yusop</a> and is <a href="https://github.com/Wintermariesolstice/Love-poem-generator" target="_blank">open-sourced on GitHub</a> 
+    and is hosted by <a href="https://precious-malasada-7d58e7.netlify.app" target="_blank">Netlify.</a></footer>
+ </div>
+    <script src="src/index.js"></script>  
+</body>
+</html>
